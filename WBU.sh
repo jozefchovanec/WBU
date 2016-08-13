@@ -63,6 +63,8 @@ parted $2 set 1 boot on
 echo
 
 echo "--- Mounting... ---" 2>&1
+mkdir /mnt/iso
+mkdir /mnt/usb
 mount $1 /mnt/iso
 mount $2"1" /mnt/usb
 
